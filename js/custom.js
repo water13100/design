@@ -21,34 +21,37 @@ $(document).ready(function() {
 		}
 	})
 
-	// rellax initialization
-	if(screen.width > 768){
-		var rellax = new Rellax('.rellax',{
-			center: true
-		});
-	}
+	// // rellax initialization
+	// if(screen.width > 768){
+	// 	var rellax = new Rellax('.rellax',{
+	// 		center: true
+	// 	});
+	// }
 		
 
 	// carousel plugin initialization
 	$('.owl-carousel').owlCarousel({
-	    loop:true,
-	    margin:16,
-	    nav:true,
-	    navText:[],
-	    dots: false,
-	    responsive:{
-	        0:{
-	            items:1
-	        },
-	        480:{
-	            items:2
-	        },
-	        768:{
-	            items:3
-	        },
-	        1600:{
-	            items:4
-	        }
-	    }
+		loop:true,
+		center:true,
+		stagePadding: 300,
+
+		margin:10,
+		nav:true,
+		responsive:{
+			0:{
+				items:1
+			},
+			600:{
+				items:1
+			},
+			1000:{
+				items:1
+			}
+		}
+		
 	})
+	
+	
+	
 });
+
