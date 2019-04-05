@@ -21,12 +21,12 @@ $(document).ready(function() {
 		}
 	})
 
-	// rellax initialization
-	if(screen.width > 768){
-		var rellax = new Rellax('.rellax',{
-			center: true
-		});
-	}
+	// // rellax initialization
+	// if(screen.width > 768){
+	// 	var rellax = new Rellax('.rellax',{
+	// 		center: true
+	// 	});
+	// }
 		
 
 	// carousel plugin initialization
@@ -46,7 +46,7 @@ $(document).ready(function() {
 	        768:{
 	            items:3
 	        },
-	        1600:{
+	        1000:{
 	            items:4
 	        }
 	    }
