@@ -31,23 +31,25 @@ $(document).ready(function() {
 
 	// carousel plugin initialization
 	$('.owl-carousel').owlCarousel({
+		center:true,
+		stagePadding: 300,
 	    loop:true,
 	    margin:16,
 	    nav:true,
-	    navText:[],
-	    dots: false,
+	    // navText:[],
+	    // dots: false,
 	    responsive:{
 	        0:{
 	            items:1
 	        },
 	        480:{
-	            items:2
+	            items:1
 	        },
 	        768:{
-	            items:3
+	            items:1
 	        },
 	        1000:{
-	            items:4
+	            items:1
 	        }
 	    }
 	})
