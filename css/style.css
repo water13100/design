@@ -1,7 +1,9 @@
 *{
     /* border:solid 1px; */
 }
-
+p{
+        font-family: "微軟正黑體",serif;
+}
 body{
   height: 100%;
   width: 100%;
@@ -17,9 +19,7 @@ body{
     padding-bottom: 1000px;
 
 }
-.side-nav:before{
-    
-}
+
 ul li{
     list-style: none;
      
@@ -27,13 +27,10 @@ ul li{
 a {
     text-decoration: none;
 }
-a:hover{
-    color:rgb(226, 135, 219);
 
-}
 .side-nav__item{
     display: inline-block;
-    width: 100px;
+    width: 150px;
     height: 20px;
     margin-top: 20px;
     padding: 10px;
@@ -55,7 +52,7 @@ a:hover{
 
 }
 .side-nav .active .side-nav__item span{
-    right: 30%;
+    left: 40%;
     color: #fff;
 }
 
@@ -68,14 +65,39 @@ a:hover{
     background-color:rgb(91, 167, 253);
     transition: all 0.5s;
     border-radius: 50px 0px 0 50px;
-
-
-
 }
 .side-nav .active .side-nav__item:before{
-    width: 160px;
+    width: 200px;
 }
+.home {
+    font-weight: 1000;
 
+    margin-top: 100px;
+    color:#eee;
+    display: inline-block;
+    text-decoration: none;
+    line-height: 30px;
+    padding: 5px;
+    border-radius: 5px;
+
+
+}
+.home :hover{
+    color:#fff;
+    background-color: rgb(91, 167, 253)
+    
+}
+.home span{
+    font-size: 15px;
+    line-height: 30px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: all 0.5s;
+    padding: 5px;
+    border-radius: 5px;
+    border: solid 2px #eee;
+}
 .imgbox{
     height: 700px;
     overflow: hidden;
@@ -85,3 +107,11 @@ img{
 max-height: 100%;
 }
 /* *****goood */
+
+.item h4{
+    color: #333;
+    font-size: 12px;
+    padding: 10px;
+    padding-bottom: 0;
+    
+}
