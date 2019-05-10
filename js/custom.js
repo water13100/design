@@ -43,14 +43,47 @@ $(document).ready(function() {
 	            items:1
 	        },
 	        480:{
-	            items:1
+				items:1,
+				stagePadding: 0,
+
 	        },
 	        768:{
+				stagePadding: 300,
 	            items:1
 	        },
 	        1000:{
+				stagePadding: 300,
+
 	            items:1
 	        }
-	    }
+		}
+		
 	})
 });
+
+
+// ....
+$(document).ready(function() {
+		$(".fancybox").fancybox({ 
+			'opacity': true,
+            'overlayShow': false,
+            'transitionIn': 'elastic',
+        	'transitionOut' : 'none' 
+		   });
+	});
+	$(function () {
+		$("#fullpage img").each(function() {
+		var parent = $(this).parent();
+		if (parent[0].tagName == "A") {
+		parent.attr({
+		"class": "fancybox",
+		"rel": "gallery"
+		});
+		} else {
+		parent.wrap("<a class='fancybox' rel='gallery' href='" + $(this).attr("src") + "'></a>")
+		}
+		});
+		$(".fancybox").fancybox();
+		});
+
+	// ％％％％％---/
